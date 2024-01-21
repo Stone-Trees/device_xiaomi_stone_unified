@@ -77,10 +77,6 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_stone
-TARGET_RECOVERY_DEVICE_MODULES := init_stone
-
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_BASE := 0x00000000
@@ -180,12 +176,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := holi
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
-
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true

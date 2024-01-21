@@ -1,8 +1,0 @@
-# DPM
-persist.vendor.dpm.feature=11
-
-# Media
-vendor.media.target_variant=_holi
-
-# Device specific properties
-import /system_ext/etc/properties/${ro.boot.product.hardware.sku}.prop

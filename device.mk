@@ -283,10 +283,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
-# Init scripts
-PRODUCT_PACKAGES += \
-    init.xiaomi.rc
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
@@ -382,15 +378,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     NotchBarKiller
-
-# Properties
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
-
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -538,6 +525,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.rc \
     init.qti.kernel.sh \
     init.target.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc \
     vendor_modprobe.sh
 
