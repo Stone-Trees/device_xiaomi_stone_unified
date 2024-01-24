@@ -1,7 +1,0 @@
-# Qcom
-ro.vendor.qti.va_odm.support=1
-
-vendor.audio.feature.fm.enable=true
-
-# Device specific properties
-import /odm/etc/properties/${ro.boot.product.hardware.sku}.prop

@@ -379,15 +379,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NotchBarKiller
 
-# Properties
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/props/properties/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
-
-
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
