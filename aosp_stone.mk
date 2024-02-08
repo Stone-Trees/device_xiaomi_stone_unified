@@ -28,7 +28,7 @@ TARGET_DEBLOAT := true
 USE_PIXEL_CHARGER := true
 
 # Use Prebuilt Kernel
-PREBUILT_KERNEL := true
+#PREBUILT_KERNEL := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_stone
