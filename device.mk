@@ -525,6 +525,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.rc \
     init.qti.kernel.sh \
     init.target.rc \
+    init.stone.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc \
     vendor_modprobe.sh
