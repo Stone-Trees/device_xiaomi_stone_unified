@@ -121,6 +121,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/vendor-modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 
+#Force prebuilt kernel
+INLINE_KERNEL_PREBUILT := true
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
