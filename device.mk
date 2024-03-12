@@ -405,6 +405,7 @@ PRODUCT_PACKAGES += \
     StoneGLWifiOverlay \
     StoneINSettingsProviderOverlay \
     StoneINWifiOverlay
+    ApertureOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
