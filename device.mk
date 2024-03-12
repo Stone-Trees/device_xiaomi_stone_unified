@@ -404,8 +404,9 @@ PRODUCT_PACKAGES += \
     StoneGLSettingsProviderOverlay\
     StoneGLWifiOverlay \
     StoneINSettingsProviderOverlay \
-    StoneINWifiOverlay
-    ApertureOverlay
+    StoneINWifiOverlay \
+    ApertureOverlay \
+    ApertureQRScannerOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
