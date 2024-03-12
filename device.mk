@@ -406,7 +406,8 @@ PRODUCT_PACKAGES += \
     StoneINSettingsProviderOverlay \
     StoneINWifiOverlay \
     ApertureOverlay \
-    ApertureQRScannerOverlay
+    ApertureQRScannerOverlay \
+    ApertureIconOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
