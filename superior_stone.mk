@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/superior/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit from stone device
 $(call inherit-product, device/xiaomi/stone/device.mk)
@@ -28,6 +28,7 @@ TARGET_INCLUDE_BACKUP_TOOL := true
 
 # Maintainer
 SUPERIOR_MAINTAINER := Dr.Opto
+SUPERIOR_OFFICIAL := true
 
 # Device props
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -37,9 +38,6 @@ TARGET_DEBLOAT := true
 
 # Charging Animation
 USE_PIXEL_CHARGER := true
-
-# Use Prebuilt Kernel
-PREBUILT_KERNEL := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := suoerior_stone
