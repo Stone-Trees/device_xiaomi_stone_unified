@@ -29,9 +29,6 @@ TARGET_USES_NOTHING_CAMERA := true
 # Charging Animation
 USE_PIXEL_CHARGER := true
 
-# Use Prebuilt Kernel
-#PREBUILT_KERNEL := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_stone
 PRODUCT_DEVICE := stone
