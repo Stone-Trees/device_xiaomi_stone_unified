@@ -3,7 +3,7 @@ git clone --depth=1 https://github.com/Stone-Trees/vendor_xiaomi_stone_unified.g
 
 git clone --depth=1 https://github.com/crdroidandroid/android_kernel_oneplus_sm8350.git -b 14.0 kernel/xiaomi/sm6375
 
-git clone --depth=1 https://github.com/Stone-Trees/device_xiaomi_stone-kernel.git -b 14-old device/xiaomi/stone-kernel
+git clone --depth=1 https://github.com/Stone-Trees/device_xiaomi_stone-kernel.git -b 14 device/xiaomi/stone-kernel
 
 git clone --depth=1 https://github.com/Stone-Trees/hardware_xiaomi.git hardware/xiaomi
 
